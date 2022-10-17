@@ -84,20 +84,6 @@ var dataset = [];
              if (dataset.length > 0) {
                  tb.fnAddData(dataset);
              }
-
-
-
-
-
-            //$("#trdata").html('');
-            //$("#message").hide();
-            //var string = '';
-           // $.each(products, function(index, product ) {
-
-             //   string += '<tr><td>'+(index+1)+'</td><td>'+product['_id']+'</td><td>'+product['name']+'</td><td>'+product['category']+'</td><td>'+product['price']+'</td><td>'+product['manufacturer']+'</td></tr>';
-            //});
-
-           // $("#trdata").html(string);
         });
     });
  
@@ -130,7 +116,7 @@ var dataset = [];
         responsive: true,
         searching: true,
         paging: true,
-        //"deferRender": true,
+
         columns: [{
                 title: "Agent Name"
             },
@@ -183,12 +169,7 @@ var dataset = [];
      });
 
      function htmlEncode(value) {
-         // Create a in-memory div, set its inner text (which jQuery automatically encodes)
-         // Then grab the encoded contents back out. The div never exists on the page.
          return $('<div/>').text(value).html();
      }
-
-
-
 
 }); 
