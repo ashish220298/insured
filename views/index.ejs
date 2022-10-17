@@ -1,0 +1,147 @@
+
+<!-- Datatables 
+extends layout
+
+block content
+  br
+  h2 CSV Opeartion
+  br
+  p
+   a(href='javascript:void(0)' class='btn btn-primary' id='importdata') Import CSV 
+   | &nbsp;&nbsp;&nbsp;
+   a(href='javascript:void(0)' class='btn btn-primary' id='fetchdata') Fetch Data
+  br  
+  p#message.alert.alert-success(style='display:none')
+  br
+  table.table.table-bordered
+    thead
+        tr
+            th #
+            th Product ID
+            th Product Name
+            th Price
+            th Category
+            th Manufacturer
+    tbody#trdata
+        tr
+            td(colspan='3') Click on <strong>Import CSV</strong> button to import and save data to MongoDB. <br />Click on <strong>Fetch Data</strong> button to display data from database
+
+    link(href='/javascripts/vendors/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet')
+    script(src='/javascripts/vendors/jquery/dist/jquery.min.js')
+    script(src='/javascripts/vendors/bootstrap/dist/js/bootstrap.min.js')
+
+            
+-->
+    <!-- Datatables 
+  script(src="/javascripts/vendors/datatables.net/js/jquery.dataTables.min.js")
+  script(src="/javascripts/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js")
+  script(src="/javascripts/vendors/datatables.net-responsive/js/dataTables.responsive.min.js")
+  script(src="/javascripts/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js")
+
+    .col-md-8.col-sm-8.col-xs-12
+          table#AttachmentsList.table.dt-responsive(cellspacing='0' width='100%')
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InsuredMines | AssignMents</title>
+    <!-- Bootstrap -->
+    <link href="/javascripts/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+  
+
+    <!-- jQuery -->
+    <script src="/javascripts/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap/ -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+    <!-- Datatables -->
+    <script src="/javascripts/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/javascripts/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="/javascripts/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/javascripts/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/utils.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div class="container body">
+
+        <div class="main_container">
+
+            <h2>InsuredMines || AssignMents</h2>
+<a id="importdata" type="button" class="btn btn-primary" href="javascript:void(0)">Import</a>
+&nbsp;&nbsp;&nbsp;
+<a id="fetchdata" type="button" class="btn btn-success btn-sm" href="javascript:void(0)">Fetch Data</a>
+&nbsp;&nbsp;&nbsp;
+<a id="addpolicy" type="button" class="btn btn-success btn-sm" href="javascript:void(0)">Add</a>
+<br>
+<br>
+
+<p id= 'message'style='display:none' ></p>
+
+<table id="AttachmentsList" class="table dt-responsive" cellspacing="0" width="100%">
+</table>
+
+
+
+<hr>
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="container-fluid bg-3 ">
+            <h3 id="UserName"></h3>
+
+            <p id="policystartdate"></p>
+            <p id="policyenddate"></p>
+            <p id="policymode"></p>
+            <p id="policynumber"></p>
+            <p id="policytype"></p>
+
+
+            <p id="AgentName"></p>
+            <p id="AccountName"></p>
+            <p id="CompanyName"></p>
+            <p id="PolicyCategory"></p>
+            
+
+
+           
+        </div><br>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+</div>
+</div>
+</body>
+
+</html>
+                                                    
+                                              
