@@ -44,6 +44,6 @@
     "filename": "autosize"
   },
   "scripts": {
-    "build": "node build"
+    "build": "node init && node build"
   }
 }
